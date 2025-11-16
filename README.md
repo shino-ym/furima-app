@@ -93,7 +93,7 @@ MAIL_FROM_NAME="${APP_NAME}"
 
 ## PHPUnit テスト
 
-1. テスト用データベース作成、コマンドラインにて以下を実行。
+1. テスト用データベース作成。PHPコンテナ内から脱出し、コマンドラインにて以下を実行。
 
 `docker exec -it furima-app-mysql-1 bash`
 
