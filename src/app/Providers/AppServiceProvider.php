@@ -13,7 +13,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->singleton(StripeClient::class, function ($app) {
+        $secret = config('services.stripe.secret');
+        return new StripeClient($secret);
+        });
     }
 
     /**

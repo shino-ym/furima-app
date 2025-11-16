@@ -1,0 +1,119 @@
+.item-page {
+    max-width: 1540px;
+}
+
+/* タブメニュー */
+.tab-menu {
+    width: 100%;
+    height: 47px;
+    opacity: 1;
+    margin-top: clamp(25px, 3.05vw, 47px);
+    display: flex;
+    align-items: center;
+    padding-left: 129px;
+}
+
+.tab-link {
+    width: 155px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: clamp(18px, 1.8vw, 24px);
+    line-height: 1;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #5F5F5F;
+}
+
+.tab-link.active {
+    color: red;
+}
+
+/* 商品一覧 */
+.item-container {
+    max-width: 1540px;
+    width: 100%;
+    margin: 0 auto;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.item-contents {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    justify-content: center;
+    max-width: 1540px;
+    margin: 20px auto;
+}
+
+.item-content {
+    width: 290px;
+    height: 290px;
+    opacity: 1;
+    border-radius: 4px;
+    margin-top: 40px;
+}
+
+.img-content {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.item-name {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(14px, 1.8vw, 25px);
+    line-height: 1;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #000;
+}
+
+.sold-badge {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(14px, 1.8vw, 25px);
+    line-height: 1;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: red;
+    padding-left: 5px;
+}
+
+.separator {
+    border: 2px solid #5F5F5F;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+}
+
+/* タブレット (768〜850px) */
+@media (min-width: 768px) and (max-width: 850px) {
+    .tab-menu {
+        padding-left: 50px;
+    }
+
+    .item-contents {
+        gap: 30px;
+    }
+
+    .item-content {
+        width: 150px;
+        height: 150px;
+        opacity: 1;
+        border-radius: 4px;
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,120 @@
+/* フォーム全体*/
+.edit-form {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.edit-form__content {
+    width: clamp(330px, 44vw, 680px);
+    background: #fff;
+    padding: 32px;
+    border-radius: 8px;
+}
+
+/* 見出し */
+.edit-form__heading h1 {
+    text-align: center;
+    margin-bottom: 24px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: clamp(24px, 2.3vw, 36px);
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+/* 画像アップロード部分 */
+.img-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.preview-image {
+    width: clamp(75px, 9.7vw, 150px);
+    height: clamp(75px, 9.7vw, 150px);
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+}
+
+.image-button {
+    width: clamp(90px, 16vw, 179px);
+    height: clamp(25px, 3.1vw, 49px);
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: clamp(14px, 1.2vw, 20px);
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: #FF5555;
+    border: 2px solid #FF5555;
+    background-color: #fff;
+    margin-left: 20px;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+/* 入力フォーム */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    margin-bottom: 8px;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: clamp(18px, 1.5vw, 24px);
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-top: 20px;
+}
+
+.form-group input {
+    width: 100%;
+    border: 1px solid #5F5F5F;
+    height: 55px;
+    border-radius: 4px;
+    border-width: 1px;
+
+}
+
+/* エラーメッセージ */
+.input-error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+/* ボタン */
+.form-btn {
+    text-align: center;
+}
+
+.submit-btn {
+    width: 100%;
+    margin-top: 50px;
+    padding: 12px;
+    height: 62.25px;
+    background-color: #FF5555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: clamp(20px, 1.8vw, 26px);
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+}

@@ -13,3 +13,14 @@ npm-debug.log
 yarn-error.log
 /.idea
 /.vscode
+
+# storage 以下は基本無視
+/storage/*
+
+# ただし追跡したいディレクトリとその中身
+!/storage/app/
+!/storage/app/public/
+!/storage/app/public/images/
+!/storage/app/public/images/**
+!/storage/app/public/dummy_images/
+!/storage/app/public/dummy_images/**

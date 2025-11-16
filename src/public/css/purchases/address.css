@@ -1,0 +1,114 @@
+/* フォーム全体 */
+.address-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.address-form__content {
+    width: 100%;
+    max-width: 680px;
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 8px;
+}
+
+/* 見出し */
+.address-form__heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: clamp(16px, 2.5vw, 36px);
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+/* 入力欄 */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: clamp(14px, 1.8vw, 24px);
+    font-family: Inter;
+}
+
+.form-group input {
+    height: 59px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 1px solid #5F5F5F
+}
+
+/* エラーメッセージ */
+.input-error-message {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+/* 送信ボタン */
+.form-btn {
+    margin-top: 20px;
+}
+
+.submit-btn {
+    width: 100%;
+    height: 65px;
+    padding: 14px;
+    background-color: #f55;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    font-family: Inter;
+    font-weight: 700;
+    font-size: clamp(16px, 2.0vw, 26px);
+    text-align: center;
+
+    margin-top: 40px;
+}
+
+.register-form__content a:hover {
+    text-decoration: underline;
+}
+
+
+/* PC (1400px以上) */
+@media (min-width: 1400px) and (max-width: 1540px) {
+    .register-form__content {
+        max-width: 680px;
+    }
+}
+
+/* タブレット (768〜850px) */
+@media (min-width: 768px) and (max-width: 850px) {
+    .register-form__content {
+        max-width: 100%;
+        padding: 30px 20px;
+    }
+
+    .form-group input {
+        height: 40px;
+        width: 100%;
+    }
+
+    .submit-btn {
+        height: 44px;
+        text-align: center;
+        justify-content: center;
+    }
+}

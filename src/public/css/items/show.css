@@ -1,0 +1,325 @@
+/* レイアウト全体  */
+.item-container {
+    margin: 0 auto;
+    max-width: 1380px;
+    max-height: 1702px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 60px 20px;
+    justify-content: center;
+}
+
+/* 画像と情報エリア */
+.image-detail {
+    display: flex;
+    align-items: flex-start;
+    gap: 80px;
+}
+
+/* 左側（画像） */
+.item-content {
+    flex: 1 1 690px;
+}
+
+.item-image {
+    width: 600px;
+    height: 600px;
+    border-radius: 4px;
+    opacity: 1;
+    margin-top: 20px;
+    object-fit: cover;
+}
+
+/* 右側（情報） */
+.item-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 690px;
+    max-width: 600px;
+    gap: 10px;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+/* テキスト系 */
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: clamp(20px, 2.5vw, 45px);
+    line-height: 1;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.item-brand {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: clamp(14px, 1.5vw, 20px);
+    line-height: 1;
+    vertical-align: middle;
+}
+
+.item-price {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: clamp(18px, 2.5vw, 35px);
+    letter-spacing: 0%;
+}
+
+.price-tax {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: clamp(14px, 1.5vw, 20px);
+    line-height: 1;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: clamp(18px, 2vw, 36px);
+    line-height: 100%;
+    vertical-align: middle;
+}
+
+h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: clamp(16px, 1.5vw, 24px);
+    line-height: 1;
+    letter-spacing: 0%;
+    text-align: center;
+    padding-right: 20px;
+    white-space: nowrap;
+}
+
+/* アイコン関連 */
+.icon-area {
+    display: flex;
+    gap: 30px;
+}
+
+.icon-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.icon-box i {
+    font-size: clamp(18px, 2.5vw, 40px);
+    cursor: pointer;
+}
+
+.like-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.like-button:focus {
+    outline: none;
+}
+
+.like-icon {
+    color: #000;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.like-icon.liked {
+    color: #ffcc00;
+}
+
+/* ボタン */
+.btn,
+.submit {
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: clamp(16px, 1.8vw, 30px);
+    line-height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    background-color: #FF5555;
+    max-width: 570px;
+    width: 100%;
+    height: auto;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit {
+    margin-top: 22px;
+    border: none;
+}
+
+/* 商品説明 */
+.description-content {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(14px, 1.5vw, 24px);
+    ;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #000000;
+}
+
+/* カテゴリ＆状態 */
+.category-row,
+.condition-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.category-tag {
+    display: inline-flex;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    background-color: #f7f7f7;
+    color: #000;
+    font-size: clamp(14px, 1.5vw, 20px);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    vertical-align: middle;
+    font-style: normal;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+}
+
+.condition-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(14px, 1.5vw, 20px);
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: #000;
+}
+
+/* コメント */
+.avatar,
+.default-avatar {
+    width: clamp(40px, 5vw, 70px);
+    height: clamp(40px, 5vw, 70px);
+    border-radius: 50%;
+    object-fit: cover;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.comment-count {
+    color: #5F5F5F;
+}
+
+.comment-item {
+    display: block;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.comment-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.comment-username {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: clamp(14px, 1.8vw, 30px);
+    color: #000;
+}
+
+.comment-body {
+    max-width: 570px;
+    width: 100%;
+    margin-top: 20px;
+    font-size: clamp(14px, 1.5vw, 20px);
+    color: #333;
+    background-color: #E5E5E5;
+    padding: 8px 12px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    min-height: clamp(40px, 5vw, 70px);
+    word-wrap: break-word;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0;
+}
+
+/* コメントフォーム */
+.form-name {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: clamp(14px, 1.5vw, 28px);
+    line-height: 1;
+    vertical-align: middle;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    max-width: 570px;
+    width: 100%;
+    height: 246px;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+
+
+.input_error_message {
+    color: #e74c3c;
+    font-size: 16px;
+    margin-top: 4px;
+}
+
+/* タブレット用 */
+@media (min-width: 768px) and (max-width: 850px) {
+    .item-container {
+        padding: 20px 20px;
+    }
+
+    .comment-body {
+        width: 100%;
+    }
+
+    .comment-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .avatar {
+        width: 50px;
+        height: 50px;
+    }
+
+    .item-image {
+        width: 300px;
+        height: 300px;
+    }
+}
