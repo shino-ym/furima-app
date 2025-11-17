@@ -15,7 +15,7 @@
 
 **Laravel 環境構築**
 
-1. PHP コンテナ内に入る\
+1. PHPコンテナ内に入る\
 `docker-compose exec php bash`
 2. 依存パッケージをインストール\
 `composer install`
@@ -93,7 +93,7 @@ MAIL_FROM_NAME="${APP_NAME}"
 
 ## PHPUnit テスト
 
-1. テスト用データベース作成、コマンドラインにて以下を実行。
+1. テスト用データベース作成。PHPコンテナ内から脱出し、コマンドラインにて以下を実行。
 
 `docker exec -it furima-app-mysql-1 bash`
 
@@ -117,16 +117,8 @@ APP_ENV=test
 APP_KEY=
 ```
 
-6. 「.env.testing」ファイルの DB を以下に変更
-
-```
-DB_CONNECTION=mysql_test
-DB_HOST=mysql
-DB_PORT=3306
-DB_DATABASE=demo_test
-DB_USERNAME=root
-DB_PASSWORD=root
-```
+6. PHPコンテナ内に入る\
+`docker-compose exec php bash`
 
 7. アプリケーションキーを作成\
 `php artisan key:generate --env=testing`
